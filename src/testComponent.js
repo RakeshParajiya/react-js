@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {FacebookLoginButton} from 'react-social-login-buttons';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
-class testComponent extends Component{
+class TestComponent extends Component {
     state = {
         pageName: 'Login Page',
         loginText: ' ',
@@ -39,7 +39,8 @@ class testComponent extends Component{
             this.setState({flag : 0});
         }
     }
-    test = () => {
+    render() 
+    {
         return (
             <Form className="login-form">
                 <h1 className="text-center" > <span className="font-weight-bold">{this.state.pageName}</span></h1>
@@ -60,4 +61,7 @@ class testComponent extends Component{
             </Form>
             );
     }
+        
+    
 }
+export default TestComponent;

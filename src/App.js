@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import './App.css';
-import test from './testComponent'; 
-
+import TestComponent from './testComponent'; 
         
-
-const App = () => {
-
-    return (
-            <test />    
-        );
+class Test extends Component {
+    render() {
+        return (
+            <TestComponent />
+            );
+    }
 }
-ReactDOM.render(<App />, document.querySelector('#root'));
+
+export default Test;
